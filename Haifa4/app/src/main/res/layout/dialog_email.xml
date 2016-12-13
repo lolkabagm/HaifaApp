@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <Button
+        android:id="@+id/btn_CancelarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:text="@string/btn_Cancelar"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/btn_EnviarEmail"
+        android:layout_alignBottom="@+id/btn_EnviarEmail"
+        android:layout_toStartOf="@+id/btn_EnviarEmail" />
+
+    <TextView
+        android:text="@string/lbl_RegistrarApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_EnviarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorPrimaryDark"
+        android:paddingTop="10dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/btn_Registrar"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InputTxtEmail"
+        android:weightSum="1"
+        android:elevation="1dp"
+        android:paddingTop="10dp"
+        app:errorEnabled="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="0dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="273dp"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:elevation="0dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txtEmail"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorNegro"
+            android:layout_weight="0.02"
+            android:layout_marginBottom="0dp" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

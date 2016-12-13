@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Haifa4</string>
+    <string name="action_settings">Registrar</string>
+
+
+    <string name="ErrorBtnElementos">Por favor, seleccione un elemento de referencia.</string>
+    <string name="btn_Registrar">ENVIAR</string>
+    <string name="btn_Cancelar">CANCELAR</string>
+    <string name="lbl_Email">Email</string>
+    <string name="lbl_RegistrarApp">Registrar aplicación</string>
+</resources>
